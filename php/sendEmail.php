@@ -18,8 +18,8 @@ try {
     $mail->Host       = 'smtp.megagroup.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'bav@avclic.ru'; // Логин на почте
     $mail->Password   = 'p0s9FUfi0C'; // Пароль на почте
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
+    $mail->SMTPSecure = '';
+    $mail->Port       = 25;
     $mail->SMTPAuth   = true;                                 //Enable SMTP authentication
 
 
