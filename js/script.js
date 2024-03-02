@@ -8,7 +8,7 @@ async function formSend(event) {
   const formData = new FormData(form);
 
   let response = await fetch("https://kotte48.github.io/emailsend/sendEmail.php", {
-    method: "get",
+    method: "GET",
     body: formData,
     mode: 'no-cors'
   });
