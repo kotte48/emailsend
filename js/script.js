@@ -10,7 +10,7 @@ async function formSend(event) {
   let response = await fetch("https://kotte48.github.io/emailsend/sendEmail.php", {
     method: "POST",
     body: formData,
-    mode: 'cors'
+    mode: 'no-cors'
   });
  
   if (response.ok) {
