@@ -7,7 +7,7 @@ async function formSend(event) {
   event.preventDefault();
   const formData = new FormData(form);
 
-  let response = await fetch("php/sendEmail.php", {
+  let response = await fetch("https://kotte48.github.io/emailsend/php/sendEmail.php", {
     method: "POST",
     body: formData,
     mode: 'cors'
