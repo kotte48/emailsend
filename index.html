@@ -6,7 +6,7 @@
 	<title>PHPMailer</title>
 </head>
 <body>
-<form enctype="multipart/form-data" method="post" id="form" action="send.php">
+<form enctype="multipart/form-data" method="post" id="form" action="https://kotte48.github.io/emailsend/send.php">
 	<p>Имя</p>
 	<input placeholder="Представьтесь" name="name" type="text" >
 	<p>Email</p>
@@ -23,7 +23,7 @@ async function submitForm(event) {
   event.preventDefault(); // отключаем перезагрузку/перенаправление страницы
   try {
   	// Формируем запрос
-    const response = await fetch(send.php, {
+    const response = await fetch(https://kotte48.github.io/emailsend/send.php, {
     	method: 'POST',
     	body: new FormData(event.target)
     });
