@@ -1,8 +1,8 @@
 <?php
 // Файлы phpmailer
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
-require 'phpmailer/Exception.php';
+require './phpmailer/PHPMailer.php';
+require './phpmailer/SMTP.php';
+require './phpmailer/Exception.php';
 
 # проверка, что ошибки нет
 if (!error_get_last()) {
@@ -33,16 +33,15 @@ if (!error_get_last()) {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['data']['debug'][] = $str;};
     
     // Настройки вашей почты
-    $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'username'; // Логин на почте
-    $mail->Password   = 'password'; // Пароль на почте
+    $mail->Host       = 'smtp.megagroup.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'bav@avclic.ru'; // Логин на почте
+    $mail->Password   = 'p0s9FUfi0C'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('username@yandex.ru', 'Name'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('bav@avclic.ru', 'Name'); // Адрес самой почты и имя отправителя
     
     // Получатель письма
-    $mail->addAddress('poluchatel@ya.ru');  
-    $mail->addAddress('poluchatel2@gmail.com'); // Ещё один, если нужен
+    $mail->addAddress('bav@avclic.ru');  
     
     // Прикрипление файлов к письму
     if (!empty($file['name'][0])) {
