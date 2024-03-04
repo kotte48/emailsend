@@ -23,7 +23,7 @@ async function submitForm(event) {
   event.preventDefault(); // отключаем перезагрузку/перенаправление страницы
   try {
   	// Формируем запрос
-    const response = await fetch(./send.php, {
+    const response = await fetch('./send.php', {
     	method: 'POST',
     	body: new FormData(event.target)
     });
